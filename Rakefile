@@ -8,7 +8,11 @@ task :circleci => [':style']
 desc 'Run all style checks'
 task :style => ['style:ruby']
 
-# Style tests. Rubocop
+desc 'Install rubygems'
+task :init do
+  sh 'bundle install --binstubs'
+end
+
 namespace :style do
   desc 'Run Ruby style checks'
   RuboCop::RakeTask.new(:ruby) do |t|
