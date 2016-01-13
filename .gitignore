@@ -3,7 +3,7 @@
 *.gem
 *.rbc
 /.config
-/.env*
+/.env
 /coverage/
 /InstalledFiles
 /pkg/
