@@ -71,26 +71,26 @@ users.each do |user|
 end
 
 a_ok_note = {
-  'fallback' => 'GitHub Enterprise User Checker',
-  'text' => 'All Grean!',
+  'fallback' => 'ghe-tools: GitHub Enterprise Users Checker',
+  'text' => 'Status: Good',
   'color' => 'good'
 }
 
 a_ng_note = {
-  'fallback' => 'GitHub Enterprise User Checker',
+  'fallback' => 'ghe-tools: GitHub Enterprise Users Checker',
   'text' => message,
   'color' => 'danger'
 }
 
 notify_user = ENV['SLACK_USER'] || 'notifier'
 
-notifier = Slack::Notifier.new ENV['SLACK_WEBHOOK'], :channel => '#s-yamada-private-dev', :username => notify_user
+notifier = Slack::Notifier.new ENV['SLACK_WEBHOOK'], :username => notify_user
 if failed == 0
-  notifier.ping 'GitHub Enterprise User Checker',
+  notifier.ping 'GitHub Enterprise Users Checker',
                 'icon_emoji' => ENV['SLACK_ICON_EMOJI'],
                 'attachments' => [a_ok_note]
 else
-  notifier.ping 'GitHub Enterprise User Checker',
+  notifier.ping 'GitHub Enterprise Users Checker',
                 'icon_emoji' => ENV['SLACK_ICON_EMOJI'],
                 'attachments' => [a_ng_note]
 end
