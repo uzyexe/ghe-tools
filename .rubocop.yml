@@ -16,3 +16,6 @@ Metrics/LineLength:
 # Configuration parameters: SupportedStyles, UseHashRocketsWithSymbolValues.
 Style/HashSyntax:
   EnforcedStyle: hash_rockets
+
+MethodLength:
+  Enabled: false
