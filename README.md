@@ -8,7 +8,7 @@ ghe-tools for GitHub Enterprise Admins.
 * Clone the repo: `git@github.com:uzyexe/ghe-tools.git`
 * Install with gem and cookbook: `rake init`
 
-## .env
+## Environment variable
 
 You can overload and customize specific variables when running scripts.
 Simply create .env with the environment variables you need, for example, OCTOKIT_API_ENDPOINT
@@ -26,3 +26,4 @@ You can look at env.sample for other variables used by this application.
 
 * users_check.rb - Difference check GHE sign-in users and LDAP user information.
 * seats_check.rb - Available seats checker.
+* archive_sacloud.rb - Archiving the disk for Sakura Cloud.
