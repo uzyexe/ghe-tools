@@ -71,15 +71,25 @@ users.each do |user|
 end
 
 a_ok_note = {
-  'fallback' => 'ghe-tools: GitHub Enterprise Users Checker',
-  'text' => 'Status: Good',
+  'fallback' => 'GitHub Enterprise Users Checker',
+  'text' => 'good',
   'color' => 'good'
 }
 
 a_ng_note = {
-  'fallback' => 'ghe-tools: GitHub Enterprise Users Checker',
-  'text' => message,
-  'color' => 'danger'
+  'color' => 'danger',
+  'fields' => [
+    {
+      'title' => 'Log',
+      'value' => message,
+      'short' => false
+    },
+    {
+      'title' => 'Status',
+      'value' => 'danger',
+      'short' => false
+    }
+  ]
 }
 
 notify_user = ENV['SLACK_USER'] || 'notifier'
