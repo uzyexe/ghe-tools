@@ -9,8 +9,8 @@ Dotenv.load
 # GitHub Enteprise API Endpoint: "https://<hostname>/api/v3"
 Octokit.configure do |c|
   c.api_endpoint = ENV['OCTOKIT_API_ENDPOINT']
-  c.login = 'uzyexe'
-  c.password = 'df86ce335965556eef01e37eab34e9083cb417bb'
+  c.login = ENV['GHE_LOGIN_USERNAME']
+  c.password = ENV['GHE_LOGIN_PASSWORD']
 end
 
 license = Octokit.license_info
