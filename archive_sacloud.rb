@@ -88,7 +88,7 @@ archives = api.archive.with_name_like(source_disk_base_name + disk_port).with_ta
 archives.length.times do |i|
   archives[i].name.match(/#{source_disk_base_name}#{disk_port}-(\d+)_.*/)
   rotation = Timecop.travel("#{archive_rotation}".to_i.days.ago).strftime '%Y%m%d'
-  next unless rotation.to_i < Regexp.last_match[1].to_i
+  next unless rotation.to_i > Regexp.last_match[1].to_i
   begin
     # puts 'Destroy: ' + archives[i].name + ' < ' + rotation.to_s
     archives[i].destroy
