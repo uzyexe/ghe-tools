@@ -11,14 +11,14 @@ ghe-tools for GitHub Enterprise Admins.
 ## Environment variable
 
 You can overload and customize specific variables when running scripts.
-Simply create .env with the environment variables you need, for example, OCTOKIT_API_ENDPOINT
+Simply create .env with the environment variables you need, for example, `OCTOKIT_API_ENDPOINT`
 
 ```
 # .env
 OCTOKIT_API_ENDPOINT="https://<YOUR_GHE_HOSTNAME>/api/v3/"
 ```
 
-This will use a OCTOKIT_API_ENDPOINT when API Request.
+This will use a `OCTOKIT_API_ENDPOINT` when API Request.
 
 You can look at env.sample for other variables used by this application.
 
