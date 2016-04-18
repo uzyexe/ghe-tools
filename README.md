@@ -28,3 +28,11 @@ You can look at env.sample for other variables used by this application.
 * users_check.rb - Difference check GHE sign-in users and LDAP user information.
 * seats_check.rb - Available seats checker.
 * archive_sacloud.rb - Archiving the disk for Sakura Cloud.
+
+# Authors
+
+* Shuji Yamada (<uzy.exe@gmail.com>)
+
+## License
+
+This project is licensed under the terms of the MIT license.
