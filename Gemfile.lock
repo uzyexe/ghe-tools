@@ -30,7 +30,7 @@ GEM
     sawyer (0.6.0)
       addressable (~> 2.3.5)
       faraday (~> 0.8, < 0.10)
-    slack-notifier (1.5.1)
+    slack-notifier (2.3.2)
     tins (1.6.0)
 
 PLATFORMS
@@ -42,7 +42,7 @@ DEPENDENCIES
   octokit (~> 4.2.0)
   rubocop (~> 0.35.0)
   saklient (~> 0.0.6)
-  slack-notifier (~> 1.5.0)
+  slack-notifier (~> 2.3.2)
 
 BUNDLED WITH
    1.16.1
