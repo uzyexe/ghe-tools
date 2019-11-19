@@ -9,7 +9,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     jaro_winkler (1.5.3)
     multipart-post (2.1.1)
-    net-ldap (0.16.1)
+    net-ldap (0.16.2)
     octokit (4.14.0)
       sawyer (~> 0.8.0, >= 0.5.3)
     parallel (1.18.0)
@@ -37,7 +37,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv (~> 2.7.5)
-  net-ldap (~> 0.16.1)
+  net-ldap (~> 0.16.2)
   octokit (~> 4.14.0)
   rubocop (~> 0.76.0)
   saklient (~> 0.0.6)
