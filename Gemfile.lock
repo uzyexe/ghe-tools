@@ -25,7 +25,7 @@ GEM
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 1.7)
     ruby-progressbar (1.10.1)
-    saklient (0.0.9)
+    saklient (0.0.10)
     sawyer (0.8.2)
       addressable (>= 2.3.5)
       faraday (> 0.8, < 2.0)
@@ -40,7 +40,7 @@ DEPENDENCIES
   net-ldap (~> 0.16.2)
   octokit (~> 4.14.0)
   rubocop (~> 0.76.0)
-  saklient (~> 0.0.6)
+  saklient (~> 0.0.10)
   slack-notifier (~> 2.3.2)
 
 BUNDLED WITH
