@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'octokit', '~> 4.14.0'
+gem 'octokit', '~> 4.15.0'
 gem 'rubocop', '~> 0.78.0'
 gem 'net-ldap', '~> 0.16.2'
 gem 'dotenv', '~> 2.7.5'
