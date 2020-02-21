@@ -14,15 +14,17 @@ GEM
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
     parallel (1.19.1)
-    parser (2.7.0.1)
+    parser (2.7.0.2)
       ast (~> 2.4.0)
     public_suffix (4.0.3)
     rainbow (3.0.0)
-    rubocop (0.79.0)
+    rexml (3.2.4)
+    rubocop (0.80.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.7.0.1)
       rainbow (>= 2.2.2, < 4.0)
+      rexml
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 1.7)
     ruby-progressbar (1.10.1)
@@ -31,7 +33,7 @@ GEM
       addressable (>= 2.3.5)
       faraday (> 0.8, < 2.0)
     slack-notifier (2.3.2)
-    unicode-display_width (1.6.0)
+    unicode-display_width (1.6.1)
 
 PLATFORMS
   ruby
@@ -40,7 +42,7 @@ DEPENDENCIES
   dotenv (~> 2.7.5)
   net-ldap (~> 0.16.2)
   octokit (~> 4.16.0)
-  rubocop (~> 0.79.0)
+  rubocop (~> 0.80.0)
   saklient (~> 0.0.10)
   slack-notifier (~> 2.3.2)
 
